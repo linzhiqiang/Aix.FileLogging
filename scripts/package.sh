@@ -10,8 +10,8 @@ fi
 
 mkdir -p $artifactsFolder
 
-dotnet restore ./Aix.MultithreadExecutor.sln
-dotnet build ./Aix.MultithreadExecutor.sln -c Release
+dotnet restore ./Aix.FileLogging.sln
+dotnet build ./Aix.FileLogging.sln -c Release
 
 
-dotnet pack ./src/Aix.MultithreadExecutor/Aix.MultithreadExecutor.csproj -c Release -o $artifactsFolder
+dotnet pack ./src/Aix.FileLogging/Aix.FileLogging.csproj -c Release -o $artifactsFolder

@@ -10,5 +10,5 @@ fi
 
 mkdir -p $artifactsFolder
 
-dotnet restore ./Aix.MultithreadExecutor.sln
-dotnet build ./Aix.MultithreadExecutor.sln -c Release
+dotnet restore ./Aix.FileLogging.sln
+dotnet build ./Aix.FileLogging.sln -c Release

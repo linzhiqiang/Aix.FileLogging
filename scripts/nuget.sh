@@ -11,8 +11,8 @@ fi
 mkdir -p $artifactsFolder
 
 
-dotnet build ./src/Aix.MultithreadExecutor/Aix.MultithreadExecutor.csproj -c Release
+dotnet build ./src/Aix.FileLogging/Aix.FileLogging.csproj -c Release
 
-dotnet pack ./src/Aix.MultithreadExecutor/Aix.MultithreadExecutor.csproj -c Release -o $artifactsFolder
+dotnet pack ./src/Aix.FileLogging/Aix.FileLogging.csproj -c Release -o $artifactsFolder
 
-dotnet nuget push ./$artifactsFolder/Aix.MultithreadExecutor.*.nupkg -k $PRIVATE_NUGET_KEY -s https://www.nuget.org
+dotnet nuget push ./$artifactsFolder/Aix.FileLogging.*.nupkg -k $PRIVATE_NUGET_KEY -s https://www.nuget.org
